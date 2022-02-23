@@ -11,7 +11,7 @@ public class PreChargeDecision {
         this.offenceAdvices = new ArrayList<OffenceAdvice>();
     }
 
-    public void recordOffenceAdvice(Suspect suspect, String s) {
+    public void adviceAgainstSuspect(String s, Suspect suspect) {
         this.offenceAdvices.add(new OffenceAdvice(suspect, s));
     }
 

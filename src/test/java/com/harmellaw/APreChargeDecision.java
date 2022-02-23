@@ -20,7 +20,7 @@ public class APreChargeDecision {
 
         PreChargeDecision preChargeDecision = new PreChargeDecision();
         String advice = "I recommend you to do something";
-        preChargeDecision.recordOffenceAdvice(suspect1, advice);
+        preChargeDecision.adviceAgainstSuspect(advice, suspect1);
 
         Optional<OffenceAdvice> offenceCreated = preChargeDecision.getOffenceAdvices()
                 .stream()
